@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+    ✏️  CUSTOMIZATION: Change the tab title to her name or your phrase
+  ============================================================ -->
+  <title>For You — A Universe Built From Love</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Premium fonts: Cormorant Garamond (display) + EB Garamond (body) + Playfair Display (accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║           SECTION 1 — THE GATE (Landing Page)               ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section id="gate" class="gate">
+  <canvas id="starCanvas"></canvas>
+
+  <div class="gate-content">
+    <!-- ✏️  CUSTOMIZATION: Change this opening line — make it intimate, specific, and yours -->
+    <p class="gate-prelude">There is a place I return to, every time I close my eyes.</p>
+    <h1 class="gate-title">It looks like you.</h1>
+
+    <button class="enter-btn" id="enterBtn" onclick="enterStory()">
+      <span class="btn-text">Enter Our Story</span>
+      <span class="btn-ring"></span>
+    </button>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║        SECTION 2 — THE BEGINNING                            ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<div id="mainContent" class="main-content hidden">
+
+<section class="chapter" id="beginning">
+  <div class="chapter-inner">
+    <div class="section-label">Chapter One</div>
+    <h2 class="chapter-title">The Day Everything Changed</h2>
+
+    <div class="beginning-grid">
+      <div class="beginning-image-wrap">
+        <!-- ════════════════════════════════════════════════════════════
+             📸  IMAGE PLACEHOLDER — SECTION 2 — THE BEGINNING
+             ————————————————————————————————————————————————————————————
+             Replace the div below with an <img> tag like this:
+             <img src="images/beginning.jpg" alt="The beginning" />
+
+             Recommended filename: images/beginning.jpg
+             Recommended: A meaningful photo from when you first met,
+             or your first photo together.
+             Size: ~800x1000px, portrait orientation preferred
+        ════════════════════════════════════════════════════════════ -->
+        <div class="img-placeholder img-portrait">
+          <span>Our first photo together</span>
+          <small><img src="images/first_meet.jpg" alt="The beginning" /></small>
+        </div>
+      </div>
+
+      <div class="beginning-text">
+        <!-- ✏️  CUSTOMIZATION: Replace with the real date you met/first talked -->
+        <div class="memory-date">[ November 10, 2024 ]</div>
+
+        <!-- ✏️  CUSTOMIZATION: Replace with your real first memory / first impression -->
+        <p class="memory-lead">I didn't know, that day, that the universe had just rearranged itself.</p>
+
+        <p class="memory-body">
+          "I stepped off the bus into the morning heat, and there you stood—a vision in a blue saree, the morning sun painting you in gold. The moment our eyes met, your face completely lit up. You froze for a single, perfect heartbeat, and then you were running toward me. If I ever had a doubt about fate, it ended right there. I knew you were the one."
+        </p>
+
+        <!-- ✏️  CUSTOMIZATION: Replace with your real first impression of her -->
+        <blockquote class="memory-quote">
+          "My Heart aches everytime I think of that moment. The way you smiled, the way your eyes sparkled, the way you said my name like it was the most beautiful word in the world. I had never felt anything like it before. It was like the universe had been waiting for that moment to create something new and wonderful."
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║        SECTION 3 — OUR TIMELINE                             ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section class="chapter" id="timeline">
+  <div class="chapter-inner">
+    <div class="section-label">Chapter Two</div>
+    <h2 class="chapter-title">Milestones of Us</h2>
+    <p class="chapter-subtitle">Click each moment to open it.</p>
+
+    <div class="timeline">
+
+      <!-- ✏️  TIMELINE ITEM 1 — First Conversation -->
+      <div class="timeline-item" onclick="toggleTimeline(this)">
+        <div class="timeline-dot"></div>
+        <div class="timeline-head">
+          <!-- ✏️ Replace with actual date -->
+          <span class="tl-date">[ March 18, 2023 ]</span>
+          <span class="tl-title">The First Conversation</span>
+          <span class="tl-arrow">↓</span>
+        </div>
+        <div class="timeline-body">
+          <!-- 📸 IMAGE PLACEHOLDER — TIMELINE ITEM 1
+               Replace with: <img src="images/timeline-1.jpg" alt="First conversation" />
+               Recommended: A screenshot, a place, or anything that evokes that first talk -->
+          <div class="img-placeholder img-landscape">
+            <span>📸 First conversation memory</span>
+            <small><img src="images/first_convo.png" alt="First conversation" /></small>
+          </div>
+          <!-- ✏️ Replace with your real memory of your first conversation -->
+          <p>You gave me suggestions on how to write the article perfectly. Thanks to you, I was able to write something worth reading. তুমি আমাকে ভাইয়া ডাকতা কেন??</p>
+        </div>
+      </div>
+
+
+
+      <!-- ✏️  TIMELINE ITEM 4 — First Adventure -->
+      <div class="timeline-item" onclick="toggleTimeline(this)">
+        <div class="timeline-dot"></div>
+        <div class="timeline-head">
+          <span class="tl-date">[ November 10, 2024 ]</span>
+          <span class="tl-title">The First Adventure</span>
+          <span class="tl-arrow">↓</span>
+        </div>
+        <div class="timeline-body">
+          <!-- 📸 IMAGE PLACEHOLDER — TIMELINE ITEM 4
+               Replace with: <img src="images/timeline-4.jpg" alt="First adventure" /> -->
+          <div class="img-placeholder img-landscape">
+            <span>Boro Station - The First Date Adventure</span>
+            <small><img src="images/Bou.jpg" alt="First adventure" /></small>
+          </div>
+          <p>বড়োস্টেশনে আমাদের প্রথম দিন। চোখের সামনে হুট করে এত সুন্দর বিশাল বড়ো নদী দেখে আশ্চর্য হয়ে গিয়েছিলাম। আমার নদী খুব ভালো লাগে। তুমি কি জানো তোমার চুলে যে নদীর মতো ঢেও আছে?</p>
+        </div>
+      </div>
+
+
+    </div><!-- /timeline -->
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║        SECTION 4 — CONSTELLATIONS                           ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section class="chapter constellation-section" id="constellations">
+  <div class="chapter-inner">
+    <div class="section-label">Chapter Three</div>
+    <h2 class="chapter-title">Why I Love You</h2>
+    <p class="chapter-subtitle">Each star holds a reason & each star is a part of you. Click to discover.</p>
+
+    <div class="constellation-field" id="constellationField">
+      <!-- Stars are rendered by JavaScript — see script.js for the reasons list -->
+      <!-- ✏️  CUSTOMIZATION: Edit the CONSTELLATION_REASONS array in script.js -->
+    </div>
+
+    <div class="constellation-popup hidden" id="constellationPopup">
+      <div class="constellation-popup-inner">
+        <div class="popup-star">✦</div>
+        <p class="popup-text" id="popupText"></p>
+        <button class="popup-close" onclick="closeConstellation()">close</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║        SECTION 5 — THE MEMORY GALLERY                       ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section class="chapter" id="gallery">
+  <div class="chapter-inner">
+    <div class="section-label">Chapter Four</div>
+    <h2 class="chapter-title">Photographs of Us</h2>
+    <p class="chapter-subtitle">Click any photograph to open it.</p>
+
+    <div class="gallery-grid">
+
+      <!-- ════════════════════════════════════════════════════════════
+           📸  GALLERY IMAGE 1
+           Replace the placeholder div with:
+           <img src="images/gallery-1.jpg" alt="[description]" onclick="openLightbox(0)" />
+           Recommended size: ~800x600px landscape or 600x800px portrait
+      ════════════════════════════════════════════════════════════ -->
+      <div class="gallery-item" onclick="openLightbox(0)">
+        <div class="img-placeholder">
+          <span>📸 Photo 1</span>
+          <small><img src="images/1.jpg" alt="Photo 1" /></small>
+        </div>
+        <div class="gallery-caption">
+          <!-- ✏️ Replace with real title, description, date -->
+          <span class="g-title">[ You ]</span>
+          <span class="g-date">[ April 15, 2025 ]</span>
+        </div>
+      </div>
+
+      <!-- 📸  GALLERY IMAGE 2 -->
+      <div class="gallery-item gallery-item--tall" onclick="openLightbox(1)">
+        <div class="img-placeholder">
+          
+          <small><img src="images/2.jpg" alt="Photo 2" /></small>
+        </div>
+        <div class="gallery-caption">
+          <span class="g-title">[ Quiet Moments ]</span>
+          <span class="g-date">[ January 20, 2026 ]</span>
+        </div>
+      </div>
+
+      <!-- 📸  GALLERY IMAGE 3 -->
+      <div class="gallery-item gallery-item--wide" onclick="openLightbox(2)">
+        <div class="img-placeholder">
+          <span>📸 Photo 3</span>
+          <small><img src="images/3.jpg" alt="Photo 3" /></small>
+        </div>
+        <div class="gallery-caption">
+          <span class="g-title">[ আমাদের বৈশাখ ]</span>
+          <span class="g-date">[ April 14, 2026 ]</span>
+        </div>
+      </div>
+
+      <!-- 📸  GALLERY IMAGE 4 -->
+      <div class="gallery-item" onclick="openLightbox(3)">
+        <div class="img-placeholder">
+          <span>📸 Photo 4</span>
+          <small><img src="images/4.jpg" alt="Photo 4" /></small>
+        </div>
+        <div class="gallery-caption">
+          <span class="g-title">[ My Birthdayyyyy ]</span>
+          <span class="g-date">[ February 3, 2025 ]</span>
+        </div>
+      </div>
+
+      <!-- 📸  GALLERY IMAGE 5 -->
+      <div class="gallery-item" onclick="openLightbox(4)">
+        <div class="img-placeholder">
+          <span>📸 Photo 5</span>
+          <small><img src="images/5.jpg" alt="Photo 5" /></small>
+        </div>
+        <div class="gallery-caption">
+          <span class="g-title">[  We Hug and we love]</span>
+          <span class="g-date">[ February 3, 2025 ]</span>
+        </div>
+      </div>
+
+
+
+    </div><!-- /gallery-grid -->
+  </div>
+
+  <!-- Lightbox Overlay -->
+  <div class="lightbox hidden" id="lightbox" onclick="closeLightbox(event)">
+    <div class="lightbox-inner">
+      <button class="lb-close" onclick="closeLightbox()">✕</button>
+      <button class="lb-prev" onclick="prevPhoto(event)">←</button>
+      <button class="lb-next" onclick="nextPhoto(event)">→</button>
+
+      <!-- ════════════════════════════════════════════════════════════
+           📸  LIGHTBOX IMAGES — mirror your gallery images here
+           Replace each placeholder div with <img> tags
+      ════════════════════════════════════════════════════════════ -->
+      <div class="lb-img-wrap" id="lbImgWrap">
+        <!-- Image rendered by JS -->
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║        SECTION 6 — LETTERS NEVER SENT                       ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section class="chapter letters-section" id="letters">
+  <div class="chapter-inner">
+    <div class="section-label">Chapter Five</div>
+    <h2 class="chapter-title">Letters Never Sent</h2>
+    <p class="chapter-subtitle">Words I wrote but never found the courage to say.</p>
+
+    <div class="letters-container">
+
+      <!-- ✏️  LETTER 1 — Click to expand -->
+      <div class="letter" onclick="toggleLetter(this)">
+        <div class="letter-seal">I</div>
+        <div class="letter-preview">
+          <!-- ✏️ Replace with the opening line of your real letter -->
+          <span class="letter-date">["Before you knew what I felt" ]</span>
+          <span class="letter-opener">To the girl who doesn't know yet…</span>
+        </div>
+        <div class="letter-full hidden">
+          <p class="letter-salutation">My love,</p>
+          <!-- ✏️ Replace with your real letter — write it honestly, from the heart -->
+          <p>I always noticed you in Science Bee group. The serious grumpy girl with a black and white picture on her profile. Did you notice me?</p>
+          <p class="letter-sign">— Yours, even then.</p>
+        </div>
+      </div>
+
+    
+
+      <!-- ✏️  LETTER 4 -->
+      <div class="letter" onclick="toggleLetter(this)">
+        <div class="letter-seal">II</div>
+        <div class="letter-preview">
+          <span class="letter-date">[ Date — or: "On a hard day" ]</span>
+          <span class="letter-opener">When it was hard, and you didn't know…</span>
+        </div>
+        <div class="letter-full hidden">
+          <p class="letter-salutation">বউ,</p>
+          <!-- ✏️ Replace with a letter about a time she helped you without knowing -->
+           <p> আমাদের মাঝে ঝগড়া হয়েছে বহুবার, বিশ্বাস ভেংগেছি হয়তো এর থেকেও বেশী। আমি জানি না আমি তোমার ভালোবাসার যোগ্য কিনা আর। তবে প্রত্যেকবার তুমি আমাকে ক্ষমা করেছো, সুযোগ দিয়েছো তোমাকে ভালোবাসার। তোমাকে অসংখ্য ধন্যবাদ জেসি। আমি তোমাকে অত্যন্ত ভালোবাসি। </p>
+          <p class="letter-sign">— Yours, even when I was lost.</p>
+        </div>
+      </div>
+
+      <!-- ✏️  LETTER 5 -->
+      <div class="letter" onclick="toggleLetter(this)">
+        <div class="letter-seal">III</div>
+        <div class="letter-preview">
+          <span class="letter-date">[ Now — or: "Today" ]</span>
+          <span class="letter-opener">Everything I want to say, right now…</span>
+        </div>
+        <div class="letter-full hidden">
+          <p class="letter-salutation">Dearest Jesika,</p>
+          <!-- ✏️ Replace with your most honest, present-tense letter to her right now -->
+           <p>The story can resume... I will return. Find you, love you, marry you and live without shame.</p>
+          <p class="letter-sign">— Nafis</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║        SECTION 7 — THINGS THAT REMIND ME OF YOU             ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section class="chapter reminders-section" id="reminders">
+  <div class="chapter-inner">
+    <div class="section-label">Chapter Six</div>
+    <h2 class="chapter-title">Everything That Is You</h2>
+    <p class="chapter-subtitle">The world has become full of you.</p>
+
+    <div class="reminders-grid">
+
+      <!-- ✏️  Each card: replace the emoji, title, and description with something real -->
+
+      <div class="reminder-card" style="--card-delay: 0s">
+        <div class="reminder-icon">🌧</div>
+        <h3 class="reminder-title">Rain</h3>
+        <!-- ✏️ Replace with what rain reminds you of her specifically -->
+        <p>কারন তুমি বলেছো তোমার বৃষ্টিতে ভিজতে ভালো লাগে।</p>
+      </div>
+
+      <div class="reminder-card" style="--card-delay: 0.1s">
+        <div class="reminder-icon">🌅</div>
+        <h3 class="reminder-title">Sunrise</h3>
+        <!-- ✏️ Replace with what sunrise means in your story -->
+        <p>তুমি এত্ত সকালে উঠোও</p>
+      </div>
+
+      <div class="reminder-card" style="--card-delay: 0.2s">
+        <div class="reminder-icon">🍂</div>
+        <h3 class="reminder-title">শীত</h3>
+        <!-- ✏️ Replace with the season that reminds you of her -->
+        <p>শীতের বিকেলের আলো তোমার মুখে পড়বে, আমরা জড়াজড়ি করে বসে দুজন চা খাবো, আর মানুষ দেখবো।</p>
+      </div>
+
+      <div class="reminder-card" style="--card-delay: 0.3s">
+        <div class="reminder-icon">🎵</div>
+        <h3 class="reminder-title">যে গান তোমার কথা ভাবায়</h3>
+        <!-- ✏️ Replace with the real song — include the artist if you want -->
+        <p>And I don't want the world to see me
+'Cause I don't think that they'd understand
+When everything's made to be broken
+I just want you to know who I am</p>
+      </div>
+
+      <div class="reminder-card" style="--card-delay: 0.4s">
+        <div class="reminder-icon">📖</div>
+        <h3 class="reminder-title">লীলাবতী</h3>
+        <!-- ✏️ Replace with a real book that reminds you of her or that she loves -->
+        <p>তুমি কি জানো তোমাকে যে হুমায়ুন আহমেদ তার বইয়ের চরিত্রে রেখেছেন? গল্পের নায়িকা লীলাবতী একজন অত্যন্ত বুদ্ধিমান, সাহসী এবং ভালোবাসায় পরিপূর্ণ একজন মানুষ। এই গল্পের বইটা শুধু তোমার জন্যই লেখা সম্ভবত</p>
+      </div>
+
+      <div class="reminder-card" style="--card-delay: 0.5s">
+        <div class="reminder-icon">🌸</div>
+        <h3 class="reminder-title">বেলী</h3>
+        <!-- ✏️ Replace with the real flower — her favorite, or one that suits her -->
+        <p>কোন ফুল ই সুন্দর না তোমার তুলনায়, তবে বেলী ফুলের ঘ্রাণ সম্ভবত তোমার বুকের ঘ্রাণের সবচেয়ে কাছাকাছি</p>
+      </div>
+
+      <div class="reminder-card" style="--card-delay: 0.6s">
+        <div class="reminder-icon">🎨</div>
+        <h3 class="reminder-title">সাদা</h3>
+        <!-- ✏️ Replace with the color that reminds you of her and why -->
+        <p>তুমি শুভ্র, পবিত্র, এবং তোমার পছন্দের রঙ সাদা</p>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║        SECTION 8 — OUR FUTURE                               ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section class="chapter future-section" id="future">
+  <div class="chapter-inner">
+    <div class="section-label">Chapter Seven</div>
+    <h2 class="chapter-title">All the Days That Haven't Happened Yet</h2>
+    <p class="chapter-subtitle">Every dream I want to share with you.</p>
+
+    <div class="future-cards" id="futureCards">
+
+      <!-- ✏️  Replace each future dream with something real and specific to YOUR hopes -->
+
+      <div class="future-card" style="--fc-delay: 0s; --fc-x: -3px; --fc-y: -4px;">
+        <div class="fc-icon">✈️</div>
+        <!-- ✏️ Replace with a specific place you want to travel to with her -->
+        <h3>Travel somewhere we've never been</h3>
+        <p>আমরা বান্দরবানের সর্বোচ্চ চুড়োয় উঠবো, পূর্ণিমা রাতে সমুদ্রে গোসল করবো, গ্রামের মেঠোপথ ধরে হেটে যাবো, কোন মাঠের ছোট্ট খড়ের গাদায় বিশ্রাম নিব</p>
+      </div>
+
+
+      <div class="future-card" style="--fc-delay: 0.4s; --fc-x: -2px; --fc-y: 3px;">
+        <div class="fc-icon">📚</div>
+        <h3>Build a home library together</h3>
+        <p>একটা লাইব্রেরি না হলে হয় বলো?</p>
+      </div>
+
+      <div class="future-card" style="--fc-delay: 0.6s; --fc-x: 3px; --fc-y: -3px;">
+        <div class="fc-icon">🎓</div>
+        <h3>Learn something new, side by side</h3>
+        <!-- ✏️ Replace with something specific you'd want to learn together -->
+        <p>প্লিজ আমরা আকাশ থেকে লাফ দেয়া শিখবো, প্লিজ প্লিজ😭</p>
+      </div>
+
+      <div class="future-card" style="--fc-delay: 0.8s; --fc-x: -4px; --fc-y: 2px;">
+        <div class="fc-icon">🍳</div>
+        <h3>Cook every Friday morning</h3>
+        <!-- ✏️ Replace with a real domestic dream -->
+        <p>শুক্রবারের ব্রেকফাস্ট আমার হাতে। তুমি ঘুমাবা</p>
+      </div>
+
+      <div class="future-card" style="--fc-delay: 1s; --fc-x: 2px; --fc-y: -4px;">
+        <div class="fc-icon">🌿</div>
+        <h3>Build A farm home</h3>
+        <!-- ✏️ Replace with your deepest, most personal hope for a life with her -->
+         <p>অনেক অনেক জমি কিনবো, শাক সবজি লাগাবো, গাছ লাগাবো, হাস মুরগি পালবো আর ধরে ধরে ডিম খাবোও</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║        SECTION 9 — THE POEM ROOM                            ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║        SECTION 10 — THE FINAL LETTER                        ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<section class="chapter final-section" id="final">
+  <canvas id="finalStars"></canvas>
+
+  <div class="final-inner">
+    <div class="final-letter" id="finalLetter">
+
+      <!-- The letter lines appear one by one via JavaScript -->
+      <!-- ✏️  CUSTOMIZATION: Edit the FINAL_LETTER_LINES array in script.js -->
+      <!-- Each line in that array becomes one line of the letter, fading in slowly -->
+
+    </div>
+
+    <div class="final-signature hidden" id="finalSignature">
+      <!-- ✏️  CUSTOMIZATION: Change this to your name or how you sign your love -->
+      <div class="signature-text">Yours, always and completely.</div>
+      <!-- ✏️  CUSTOMIZATION: Change to her name -->
+      <div class="signature-name">— For Jesika Ira, who made everything make sense.</div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /mainContent -->
+
+
+<!-- ============================================================
+     AUDIO PLAYER (Optional — uncomment and customize)
+     ============================================================
+     To add background music:
+     1. Add your audio file to the /audio folder
+     2. Uncomment the code below
+     3. Replace 'audio/ambient.mp3' with your file path
+
+     <div class="audio-player hidden" id="audioPlayer">
+       <button onclick="toggleAudio()" id="audioBtn">♪ Play Music</button>
+       <audio id="bgAudio" loop>
+         <source src="audio/ambient.mp3" type="audio/mpeg" />
+       </audio>
+     </div>
+============================================================ -->
+
+
+<!-- ============================================================
+     PROGRESS INDICATOR
+============================================================ -->
+<div class="progress-bar" id="progressBar"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
